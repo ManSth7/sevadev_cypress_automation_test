@@ -1,1 +1,1 @@
-# sevadev_cypress_automation_test
+# weather_app_cypress_automation_test
