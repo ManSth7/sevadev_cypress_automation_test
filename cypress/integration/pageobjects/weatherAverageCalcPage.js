@@ -16,13 +16,24 @@ class weatherAverageCalcPage {
             .click({force : true, timeout : 3000});
     }
 
-    calculateAverageOfLowerTemprature(){
-        var avg = 0;
-        cy.get('.DetailsSummary--lowTempValue--1DlJK').each(($el, index, $list) => {
-            avg +=parseFloat($el.text())
+    calculateAverageOfHigherTemprature(){
+        var avg1 = 0;
+        cy.get('.DetailsSummary--highTempValue--3x6cL').each(($el, index, $list) => {
+            avg1 +=parseFloat($el.text())
             if(index == $list.length - 1){
-                avg = avg/$list.length;
-                cy.log("Average of Lower temprature leve = "+ avg);
+                avg1 = avg1/$list.length;
+                cy.log("Average of Higher temprature level = "+ avg1);
+            }
+        });
+    }
+
+    calculateAverageOfLowerTemprature(){
+        var avg2 = 0;
+        cy.get('.DetailsSummary--lowTempValue--1DlJK').each(($el, index, $list) => {
+            avg2 +=parseFloat($el.text())
+            if(index == $list.length - 1){
+                avg2 = avg2/$list.length;
+                cy.log("Average of Lower temprature level = "+ avg2);
             }
         });
     }

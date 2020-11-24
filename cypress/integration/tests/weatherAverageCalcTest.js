@@ -18,6 +18,7 @@ describe('Average of temperature level Calculation Test', function (){
     it('Calculate ten days average temperature of lower levels', function (){
         objWAC.searchForCity(testData.city);
         objWAC.selectItemList();
+        objWAC.calculateAverageOfHigherTemprature();
         objWAC.calculateAverageOfLowerTemprature();
     })
 })
