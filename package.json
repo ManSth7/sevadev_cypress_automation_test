@@ -1,16 +1,17 @@
 {
   "name": "sevadev_cypress_automation_test",
   "version": "1.0.0",
-  "description": "",
+  "description": "Weather data automation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ManSth7/sevadev_cypress_automation_test.git"
   },
-  "author": "",
+  "author": "Manoj Thapa Shrestha",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ManSth7/sevadev_cypress_automation_test/issues"

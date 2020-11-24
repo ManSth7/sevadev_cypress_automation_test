@@ -1,1 +1,16 @@
-{}
+{
+    "env" : {
+        "testUrl" : "https://weather.com/"
+    },
+  "defaultCommandTimeout": 30000,
+  "execTimeout": 60000,
+  "taskTimeout": 60000,
+  "pageLoadTimeout": 120000,
+  "requestTimeout": 30000,
+  "responseTimeout": 30000,
+  "viewportHeight": 700,
+  "viewportWidth": 1280,
+  "fixturesFolder": "cypress/fixtures",
+  "integrationFolder": "cypress/integration/tests",
+  "testFiles": "**/*.*"
+}
